@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ball Game 2</title>
+    <link rel='stylesheet' href='css/style.css' />
+    <link rel="icon" href="images/favicon.png">
+  </head>
+  <body>
+    <img id='moon' onclick='dark()' src='images/moon.png' />
+    <img id='sun' onclick='light()' src='images/sun.png' />
+    <h1 class='remove' id='title'>Ball Game 2</h1>
+    <div class='remove' id='play'>
+      <button id='launch' onclick='start()'>PLAY</button>
+    </div>
+    <header>
+      <h1 id='sel'>Select Your Settings</h1>
+      <div class='flex-container'>
+        <div>
+          <button class='pro' onclick='diff("ez")'>Easy</button>
+        </div>
+        <div>
+          <button class='pro' id='norm' onclick='diff("md")'>Medium</button>
+        </div>
+        <div>
+          <button class='pro' onclick='diff("hd")'>Hard</button>
+        </div>
+        <div>
+          <input type="color" id='ballColor' onchange='confirm()' />
+        </div>
+      </div>
+    </header>
+    <div id='ball' onclick='clicked()'>de ball</div>
+    <h1 id='win'>VICTORY!</h1>
+  </body>
+  <script src='javascript/app.js'></script>
+</html>
