@@ -174,3 +174,12 @@ input {
   border: 2px double #000;
   color: #000;
 }
+
+#countdown {
+  display: none;
+  color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Kirang Haerang', cursive;
+}
