@@ -6,13 +6,14 @@
     <link rel="icon" href="images/favicon.png">
   </head>
   <body>
+    <p id="countdown"></p>
     <img id='moon' onclick='dark()' src='images/moon.png' />
     <img id='sun' onclick='light()' src='images/sun.png' />
     <h1 class='remove' id='title'>Ball Game 2</h1>
     <div class='remove' id='play'>
       <button id='launch' onclick='start()'>PLAY</button>
     </div>
-    <section>
+    <header>
       <h1 id='sel'>Select Your Settings</h1>
       <div class='flex-container'>
         <div>
@@ -28,7 +29,7 @@
           <input type="color" id='ballColor' onchange='confirm()' />
         </div>
       </div>
-    </section>
+    </header>
     <div id='ball' onclick='clicked()'>de ball</div>
     <h1 id='win'>VICTORY!</h1>
   </body>
