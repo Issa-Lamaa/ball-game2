@@ -1,7 +1,11 @@
 let ball = document.getElementById("ball");
 let win = document.getElementById("win");
 let link = document.getElementsByTagName("link")[0];
-let timeLeft = 4;
+let timeLeft = 0;
+
+function stop() {
+  ball.style.animationDuration = "0s";
+}
 
 function start() {
   for (let i = 0 ; i < 2 ; i++) {
@@ -26,6 +30,8 @@ function confirm()
 {ball.style.backgroundColor = document.getElementsByTagName("input")[0].value}
 
 function diff(difficulty) {
+  stop();
+  timeLeft = 4;
   let timeSpot = document.getElementById("countdown");
   timeSpot.style.display = 'block';
   let countdownTimer = setInterval(
@@ -39,7 +45,7 @@ function diff(difficulty) {
         ball.innerHTML = 'de Ball';
         switch(difficulty) {
           case 'ez': 
-            ball.style.animationDuration = '5s';
+          ball.style.animationDuration = '5s';
             ball.style.width = '120px';
             ball.style.height = '120px';
             ball.style.fontSize = "30px";
